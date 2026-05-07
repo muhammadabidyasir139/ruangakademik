@@ -1,0 +1,92 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--outline-variant);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.logo span {
+  color: var(--secondary);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLinks a {
+  font-weight: 500;
+  color: var(--on-surface-variant);
+  transition: color 0.2s;
+}
+
+.navLinks a:hover {
+  color: var(--primary);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.loginBtn {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.registerBtn {
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.registerBtn:hover {
+  opacity: 0.9;
+}
+
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuToggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--primary);
+  border-radius: 3px;
+}
+
+@media (max-width: 1024px) {
+  .navLinks, .actions {
+    display: none;
+  }
+  
+  .menuToggle {
+    display: flex;
+  }
+}
