@@ -1,0 +1,108 @@
+.authContainer {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--surface);
+}
+
+.authCard {
+  background-color: white;
+  padding: 3rem;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 40px rgba(4, 13, 36, 0.05);
+  width: 100%;
+  max-width: 480px;
+  border: 1px solid var(--outline-variant);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--on-surface-variant);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.inputGroup input, .inputGroup select {
+  padding: 0.875rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--outline-variant);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.inputGroup input:focus, .inputGroup select:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px var(--secondary-container);
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submitBtn:hover {
+  background-color: #005a2e;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+}
+
+.footer a {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 480px) {
+  .authCard {
+    padding: 2rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

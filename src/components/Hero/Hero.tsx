@@ -6,9 +6,9 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
-          <div className={styles.badge}>Terpercaya Sejak 2020</div>
+          <div className={styles.badge}>Latih kemampuan kamu untuk lolos</div>
           <h1 className="display-xl">
-            Raih Mimpi Menjadi <span>ASN</span> Tahun Depan
+            Menjadi <span>ASN</span> Tahun Depan
           </h1>
           <p className="body-lg">
             Platform belajar CPNS terlengkap dengan materi yang selalu diperbarui sesuai kisi-kisi terbaru. Raih mimpi karir Anda di instansi idaman tahun depan.

@@ -14,7 +14,6 @@ export default function Navbar() {
           <li><Link href="/">Home</Link></li>
           <li><Link href="/paket">Paket Belajar</Link></li>
           <li><Link href="/tryout">Tryout</Link></li>
-          <li><Link href="/tentang">Tentang</Link></li>
         </ul>
         <div className={styles.actions}>
           <Link href="/login" className={styles.loginBtn}>Masuk</Link>
